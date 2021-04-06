@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="TestFlowFlow" doc:id="cf1df600-12bb-4eaa-b438-fe21edc207b5" >
 		<http:listener doc:name="Listener" doc:id="69a02a72-1755-4c06-8437-bd75e9efe6ad" config-ref="HTTP_Listener_config" path="/hello1"/>
 		<logger level="INFO" doc:name="Logger" doc:id="f2ac951b-6542-497e-91d0-5b2fa9a88cd4" message='"This is api specific branch code we need to add in the api so no need to do anything...."'/>
+		<logger level="INFO" doc:name="Logger" doc:id="f2ac951b-6542-497e-91d0-5b2fa9a88cd4" message='"This is api specific branch code"'/>
 	</flow>
 </mule>
