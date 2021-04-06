@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="sample_schudlingFlow" doc:id="35cf92c9-4cc0-4574-87be-79fbb33984fb" >
+		<scheduler doc:name="Scheduler" doc:id="fbf30d39-3f06-455a-b728-9620acc78eaa" >
+			<scheduling-strategy >
+				<fixed-frequency startDelay="1"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="00546ef6-c53a-4e92-8e81-8a2bf89db0cb" message="*************Message flow was triggered"/>
+		<logger level="INFO" doc:name="Logger" doc:id="44911b88-d517-44c9-94db-7f3a73220168" message='"This is a sample project message 2"'/>
+	</flow>
+</mule>
